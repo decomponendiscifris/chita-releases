@@ -3,5 +3,14 @@
   <channel>
     <title>Chita</title>
     <language>en</language>
+    <item>
+      <title>Chita 0.1.0</title>
+      <pubDate>Mon, 16 Nov 2026 22:09:42 -0000</pubDate>
+      <sparkle:version>336</sparkle:version>
+      <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <enclosure url="https://github.com/decomponendiscifris/chita-releases/releases/download/v0.1.0/Chita-0.1.0.dmg" type="application/octet-stream" sparkle:edSignature="EpM0Bs0V6w5tmcy2v72qG5u12qon+AzYB4FJhCICcay7XUb7tXEaZ5D3f4AHoikLUvCqUffFqUlWHYaPictDBw==" length="16376958"/>
+    </item>
   </channel>
 </rss>

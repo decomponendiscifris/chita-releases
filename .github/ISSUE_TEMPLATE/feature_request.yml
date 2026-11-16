@@ -1,0 +1,48 @@
+name: An idea for Chita
+description: Something Chita could do, or do better.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like Chita to do?
+      placeholder: Show how much space each photo album takes.
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: What would it help you with?
+      description: What you're trying to get done, and how you do it today. This helps find the best way to do it.
+      placeholder: I'm running out of space and don't know which albums to clean up first.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where in Chita?
+      options:
+        - Browsing folders (lists, icons, columns, gallery, tabs, panes)
+        - Search
+        - Folder sizes, the space map, Free Up Space
+        - Make Smaller
+        - Copying, moving, renaming, the Trash
+        - Archives
+        - Phones and tablets
+        - Nearby
+        - Cloud accounts and servers
+        - Applications and updates
+        - Libraries
+        - Extensions
+        - Settings
+        - Something new
+    validations:
+      required: true
+
+  - type: textarea
+    id: pictures
+    attributes:
+      label: Sketches or examples
+      description: Optional. A drawing, a screenshot of another app that does it well, anything that shows the idea.

@@ -1,0 +1,125 @@
+name: Something doesn't work
+description: Chita did something wrong, crashed or got stuck.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. A few short answers are enough to find the problem.
+        Please leave out anything private, such as the names of your files and folders, if you'd rather not share them.
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What went wrong, and what you expected instead.
+      placeholder: I dragged a folder onto my phone in Nearby and nothing was sent. I expected it to arrive in the phone's Downloads.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: How can it be made to happen again?
+      description: The steps, one per line. If you're not sure, say what you were doing just before.
+      placeholder: |
+        1. Open Nearby
+        2. Drag a folder onto the phone
+        3. …
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Where in Chita?
+      options:
+        - Browsing folders (lists, icons, columns, gallery, tabs, panes)
+        - Search
+        - Folder sizes, the space map, Free Up Space
+        - Make Smaller
+        - Copying, moving, renaming, the Trash
+        - Archives (zip, 7z, tar, RAR)
+        - Phones and tablets
+        - Nearby (LocalSend, AirDrop)
+        - Cloud accounts and servers
+        - Applications and updates
+        - Libraries (photos, videos, music)
+        - Extensions
+        - Settings
+        - Installing or updating Chita
+        - Somewhere else
+    validations:
+      required: true
+
+  - type: dropdown
+    id: often
+    attributes:
+      label: How often does it happen?
+      options:
+        - Every time
+        - Sometimes
+        - It happened once
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Chita version
+      description: In Chita › About Chita.
+      placeholder: 0.1.0 (336)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: macos
+    attributes:
+      label: macOS version
+      description: In the Apple menu › About This Mac.
+      options:
+        - macOS 15 Sequoia
+        - macOS 26 Tahoe
+        - macOS 27
+    validations:
+      required: true
+
+  - type: dropdown
+    id: access
+    attributes:
+      label: Does Chita have Full Disk Access?
+      description: In System Settings › Privacy & Security › Full Disk Access.
+      options:
+        - "Yes"
+        - "No"
+        - I'm not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: pictures
+    attributes:
+      label: Screenshots or a screen recording
+      description: Optional, but they often say more than words. Drag them here.
+
+  - type: textarea
+    id: crash
+    attributes:
+      label: Crash report
+      description: Only if Chita quit unexpectedly. Open the Console app, choose Crash Reports, select the newest one for Chita, and paste it here or drag the file in.
+      render: text
+
+  - type: input
+    id: mac
+    attributes:
+      label: Your Mac
+      description: Optional. In the Apple menu › About This Mac.
+      placeholder: MacBook Air, M2
+
+  - type: checkboxes
+    id: searched
+    attributes:
+      label: Before sending
+      options:
+        - label: I looked through the open issues and this isn't one of them.
+          required: true

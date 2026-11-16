@@ -16,3 +16,8 @@ Chita checks for updates by itself (Chita › Check for Updates…, and Settings
 the update feed this repository publishes at
 `https://decomponendiscifris.github.io/chita-releases/appcast.xml`, and installs an update only
 when it is signed with Chita's own update key.
+
+## Problems and ideas
+
+[Open an issue](https://github.com/decomponendiscifris/chita-releases/issues/new/choose): a short
+form asks what happened, how to make it happen again and which Chita and macOS you have.
